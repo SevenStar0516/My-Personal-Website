@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+    <!-- Custom Styles -->
+    <link href="./CSS-Folder/navigation.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<header class="container">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm navbar-light py-3 mb-4 border-bottom border-secondary"
+         aria-label="Main Navigation">
+        <div class="container-fluid">
+            <!-- Accessible button for toggling navigation -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto w-100 justify-content-around fs-5">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link px-2 link-dark">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link px-2 link-dark">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./resume.html" class="nav-link px-2 link-dark">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./portfolio.html" class="nav-link px-2 link-dark active"
+                           aria-current="page">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./blog.html" class="nav-link px-2 link-dark">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link px-2 link-dark">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <!-- Portfolio Section -->
+    <section class="py-5" aria-labelledby="portfolio-heading">
+        <div class="container">
+            <!-- Section header -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 text-center">
+                    <h2 id="portfolio-heading" class="mb-4 display-5">My Creative Work</h2>
+                    <p class="text-secondary mb-5 lead">
+                        Explore some of my best projects. Below you will find a featured video of my work and a UI/UX prototype design.
+                    </p>
+                    <hr class="w-50 mx-auto mb-5 border-secondary">
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="row mb-5">
+                <div class="col-12 col-md-8 mx-auto">
+                    <h3 class="mb-4">Featured Video (Adobe Photoshop/Adobe Audition)</h3>
+                    <div class="ratio ratio-16x9">
+                        <video controls aria-label="Video showing an overview of my project work">
+                            <source src="./Video/my_project_video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UI/UX Work Section -->
+            <div class="row mb-5">
+                <div class="col-12 col-md-8 mx-auto">
+                    <h3 class="mb-4">UI/UX Work</h3>
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMDVuqo26alTaIvnhmeXIZz%2FCCT-478-Usability-Study-Plan%3Ft%3D2nFCOGjVzFHQ04D8-1%26scaling%3Dcontain%26content-scaling%3Dfixed%26page-id%3D0%253A1%26node-id%3D1-3"
+                            allowfullscreen
+                            aria-label="Figma prototype of usability study plan">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<div class="container">
+    <!-- Footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+            aria-label="Footer Section">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Sean Fei Portfolio</p>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+            <li class="nav-item"><a href="./resume.html" class="nav-link px-2 text-body-secondary">Resume</a></li>
+            <li class="nav-item"><a href="./portfolio.html" class="nav-link px-2 text-body-secondary active"
+                                    aria-current="page">Portfolio</a></li>
+            <li class="nav-item"><a href="./blog.html" class="nav-link px-2 text-body-secondary">Blog</a></li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+        </ul>
+    </footer>
+</div>
+
+<!-- My JavaScript -->
+<script src="./JS/transitions.js"></script>
+
+</body>
+</html>

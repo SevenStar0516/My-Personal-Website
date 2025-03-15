@@ -1,0 +1,20 @@
+/* Reset body padding and margin */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Apply text outline effect with black stroke and white fill */
+.text-outline {
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+/* Set images to fully cover the container while maintaining proportions */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

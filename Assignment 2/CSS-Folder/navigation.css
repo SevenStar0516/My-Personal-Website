@@ -1,0 +1,64 @@
+/* Force a vertical scrollbar for the entire page */
+html {
+    overflow-y: scroll;
+}
+
+/* Set default font and background color for the body */
+body {
+    font-family: 'Tomorrow', sans-serif;
+    background-color: #f9f9f9;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-in {
+    opacity: 1;
+}
+/* Base styling for navigation links */
+.nav-link {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Preserve link color on hover */
+.nav-link:hover {
+    color: #000;
+}
+
+/* Add an animated underline effect to nav links */
+.nav-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+/* Expand underline effect on hover */
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+/* Styling for active nav links */
+.nav-link.active {
+    color: #000;
+}
+
+/* Underline for active nav links is always visible */
+.nav-link.active::before {
+    transform: scaleX(1);
+}
+
+/* Custom font size for links within list items inside f-size class */
+.f-size li a {
+    font-size: 1.2rem;
+}

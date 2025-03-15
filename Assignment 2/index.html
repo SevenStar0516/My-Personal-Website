@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page - Sean Fei Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- Custom Styles -->
+	<link href="./CSS-Folder/navigation.css" rel="stylesheet" type="text/css"/>
+	<link href="./CSS-Folder/homepage.css" rel="stylesheet" type="text/css"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<header class="container">
+		<!-- Navigation Bar (Color remains unchanged) -->
+		<nav class="navbar navbar-expand-sm navbar-light py-3 mb-4 border-bottom border-secondary" aria-label="Main Navigation">
+			<div class="container-fluid">
+				<!-- Mobile Toggle Button -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navigation Links -->
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav mx-auto w-100 justify-content-around fs-5">
+						<li class="nav-item">
+							<a href="#" class="nav-link px-2 link-dark active" aria-current="page">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="./about.html" class="nav-link px-2 link-dark">About Me</a>
+						</li>
+						<li class="nav-item">
+							<a href="./resume.html" class="nav-link px-2 link-dark">Resume</a>
+						</li>
+						<li class="nav-item">
+							<a href="./portfolio.html" class="nav-link px-2 link-dark">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a href="./blog.html" class="nav-link px-2 link-dark">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a href="./contact.html" class="nav-link px-2 link-dark">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="container">
+		<!-- Hero Section with updated technical look -->
+		<div class="p-5 mb-4 rounded-1 text-center hero-gradient" role="banner" aria-label="Introduction Section">
+			<div class="container-fluid py-5">
+				<h1 class="display-2 fw-bold">Hello, I'm Sean Fei</h1>
+				<p class="fs-3 tech-tagline">Frontend Web Developer & Designer</p>
+				<p class="lead fs-4">Crafting high-performance web interfaces using modern technologies and clean code.</p>
+				<a href="./about.html" class="btn btn-outline-dark btn-lg mt-3" data-bs-toggle="tooltip"
+					title="Learn more about my background">Learn More</a>
+			</div>
+		</div>
+		<!-- Quick Navigation Cards with hover effects -->
+		<div class="row g-4" role="region" aria-label="Quick Navigation Cards">
+			<!-- Card 1: Resume -->
+			<div class="col-md-4">
+				<a href="./resume.html" class="text-decoration-none">
+					<div class="card h-100 shadow-sm border-0 hover-transition">
+						<img src="./Image/resume.jpg" class="card-img-top" alt="Resume">
+						<div class="card-body">
+							<h4 class="card-title">Resume</h4>
+							<p class="card-text">Explore my professional journey, skills, and experiences.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<!-- Card 2: Portfolio -->
+			<div class="col-md-4">
+				<a href="./portfolio.html" class="text-decoration-none">
+					<div class="card h-100 shadow-sm border-0 hover-transition">
+						<img src="./Image/portfolio.jpg" class="card-img-top" alt="Portfolio">
+						<div class="card-body">
+							<h4 class="card-title">Portfolio</h4>
+							<p class="card-text">View a curated collection of my technical and creative projects.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<!-- Card 3: Contact -->
+			<div class="col-md-4">
+				<a href="./contact.html" class="text-decoration-none">
+					<div class="card h-100 shadow-sm border-0 hover-transition">
+						<img src="./Image/contact.jpg" class="card-img-top" alt="Contact">
+						<div class="card-body">
+							<h4 class="card-title">Contact</h4>
+							<p class="card-text">Get in touch to discuss projects, collaborations, or inquiries.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</main>
+	<!-- Footer -->
+	<div class="container">
+		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" aria-label="Footer Section">
+			<p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Sean Fei Portfolio</p>
+			<ul class="nav col-md-4 justify-content-end">
+				<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary active" aria-current="page">Home</a></li>
+				<li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+				<li class="nav-item"><a href="./resume.html" class="nav-link px-2 text-body-secondary">Resume</a></li>
+				<li class="nav-item"><a href="./portfolio.html" class="nav-link px-2 text-body-secondary">Portfolio</a></li>
+				<li class="nav-item"><a href="./blog.html" class="nav-link px-2 text-body-secondary">Blog</a></li>
+				<li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+			</ul>
+		</footer>
+	</div>
+
+<script>
+	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+	const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+</script>
+
+<!-- My JavaScript -->
+<script src="./JS/transitions.js"></script>
+
+</body>
+</html>

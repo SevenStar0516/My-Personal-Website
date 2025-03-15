@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blog Page</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+
+	<!-- My JavaScript -->
+    <script src="./JS/transitions.js"></script>
+
+	<!-- Custom Styles -->
+	<link href="./CSS-Folder/navigation.css" rel="stylesheet" type="text/css"/>
+	<link href="./CSS-Folder/blog.css" rel="stylesheet" type="text/css"/>
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+		rel="stylesheet">
+</head>
+<body>
+	<header class="container">
+		<!-- Navigation Bar-->
+		<nav class="navbar navbar-expand-sm navbar-light py-3 mb-4 border-bottom border-secondary"
+			aria-label="Main navigation">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav mx-auto w-100 justify-content-around fs-5">
+						<li class="nav-item">
+							<a href="./index.html" class="nav-link px-2 link-dark">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="./about.html" class="nav-link px-2 link-dark">About Me</a>
+						</li>
+						<li class="nav-item">
+							<a href="./resume.html" class="nav-link px-2 link-dark">Resume</a>
+						</li>
+						<li class="nav-item">
+							<a href="./portfolio.html" class="nav-link px-2 link-dark">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link px-2 link-dark active" aria-current="page">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a href="./contact.html" class="nav-link px-2 link-dark">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="container">
+		<!-- Blog Post Section (Updated Color) -->
+		<div class="p-4 p-md-5 mb-4 rounded text-dark bg-white" aria-labelledby="page-title"
+			aria-describedby="page-description">
+			<div class="col-lg-6 px-0">
+				<h1 id="page-title" class="display-4 fst-italic">Welcome to My Blog!</h1>
+				<p class="lead my-3" id="page-description">
+					Dive into a collection of articles, stories, and insights about tech, life, and personal growth. Stay updated with the latest trends, tutorials, and my personal experiences as I navigate through the world of technology and creativity.
+				</p>
+			</div>
+		</div>
+		<!-- Blog Cards Section -->
+		<div class="row g-4" role="region" aria-label="Blog Cards">
+			<!-- Blog Card 1 -->
+			<div class="col-md-6">
+				<div class="card h-100 shadow-sm border-0 hover-transition">
+					<div class="card-body d-flex flex-column">
+						<strong class="d-inline-block mb-2 text-primary">SoundCloud</strong>
+						<h3 class="card-title">My Personal Podcast</h3>
+						<div class="mb-1 text-body-secondary">Nov 12</div>
+						<p class="card-text mb-4">
+							League of Legends: The Power of In-Game Interaction and Social Media in Shaping User Experience. Check out my latest podcast for more insights and discussions.
+						</p>
+						<a href="https://soundcloud.com/sean-fei-34469627/league-of-legends-the-power-of-in-game-interaction-and-social-media-in-shaping-user-experience/s-OPx2gTkCZYZ?si=5d75339d8c594eb2ad92cfaadbb445be&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+							class="btn btn-primary mt-auto"
+							aria-label="Listen to my latest podcast on League of Legends">
+							Listen to Podcast
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- Blog Card 2 -->
+			<div class="col-md-6">
+				<div class="card h-100 shadow-sm border-0 hover-transition">
+					<div class="card-body d-flex flex-column">
+						<strong class="d-inline-block mb-2 text-success">Esport</strong>
+						<h3 class="card-title">League of Legends</h3>
+						<div class="mb-1 text-body-secondary">Nov 11</div>
+						<p class="card-text mb-4">
+							Get the latest updates, match schedules, and insights on League of Legends tournaments. Stay tuned to all the action happening in the world of e-sports.
+						</p>
+						<a href="https://lolesports.com/en-US/"
+							class="btn btn-success mt-auto"
+							aria-label="Continue reading about League of Legends tournaments">
+							Continue reading
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="container">
+		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" aria-label="Footer Section">
+			<p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Sean Fei Portfolio</p>
+			<ul class="nav col-md-4 justify-content-end">
+				<li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+				<li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+				<li class="nav-item"><a href="./resume.html" class="nav-link px-2 text-body-secondary">Resume</a></li>
+				<li class="nav-item"><a href="./portfolio.html" class="nav-link px-2 text-body-secondary">Portfolio</a></li>
+				<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary active" aria-current="page">Blog</a></li>
+				<li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+			</ul>
+		</footer>
+	</div>
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+	</script>
+
+	<!-- My JavaScript -->
+	<script src="./JS/transitions.js"></script>
+</body>
+</html>

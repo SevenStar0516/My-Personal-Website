@@ -1,0 +1,27 @@
+/* Slight scaling effect on hover */
+.hover:hover {
+    transform: scale(1.03);
+}
+
+/* Truncate text to show an ellipsis after 3 lines */
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.hover-transition {
+    transition: transform 0.3s ease;
+}
+.hover-transition:hover {
+    transform: scale(1.05);
+}
+.hero-gradient {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    color: #212529;
+}
+.tech-tagline {
+    font-family: 'Courier New', Courier, monospace;
+}

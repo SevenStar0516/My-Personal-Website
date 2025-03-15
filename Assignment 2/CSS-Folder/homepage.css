@@ -1,0 +1,39 @@
+/* Jumbotron styling */
+.jumbotron-bg {
+    background-image: url('../Image/homepage-background.JPG');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Smooth transition for card */
+.card {
+    transition: transform 0.3s ease;
+}
+
+/* Scale card element slightly on hover */
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Styling button color on hover */
+.btn-outline-light:hover {
+    background-color: gray;
+    border-color: gray;
+    color: white;
+}
+
+.hover-transition {
+    transition: transform 0.3s ease;
+}
+.hover-transition:hover {
+    transform: scale(1.05);
+}
+/* Additional styles for a technical look */
+.hero-gradient {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    color: #212529;
+}
+.tech-tagline {
+    font-family: 'Courier New', Courier, monospace;
+}
